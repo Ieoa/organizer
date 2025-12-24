@@ -25,3 +25,5 @@ for file in os.listdir(source_folder):
             os.makedirs(dest_path, exist_ok=True)
             shutil.move(file_path, os.path.join(dest_path, file))
             print(f'Moved: {file} to {dest_path}')
+
+os.system('schtasks /Change /TN "OrganizerBot" /Disable')
